@@ -4,100 +4,100 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Education Page</title>
+    <link rel="stylesheet" href="education.css" />
   </head>
   <body>
-    <h1>My Education</h1>
+    <header>
+      <img src="logo/portfolio logo.png" alt="Logo" />
+      <h1>My Education</h1>
+    </header>
 
-    <div>
-      <h2>High School Subjects</h2>
-      <ul>
-        <li>Mathematics</li>
-        <li>English</li>
-        <li>chemistry</li>
-        <li>biology</li>
-        <li>physics</li>
-      </ul>
-
-      <h2>College Subjects</h2>
-      <ul>
-        <li>software engineering</li>
-        <li>comparc</li>
-        <li>web devlopment</li>
-        <li>HCI</li>
-      </ul>
-    </div>
-
-    <div>
-      <h2>Grades and Marks</h2>
-      <table border="1">
-        <thead>
-          <tr>
-            <th>Subject</th>
-            <th>Grade</th>
-            <th>Mark</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Mathematics</td>
-            <td>A</td>
-            <td>95</td>
-          </tr>
-          <tr>
-            <td>English</td>
-            <td>B</td>
-            <td>85</td>
-          </tr>
-
-          <tr>
-            <td>software engineering</td>
-            <td>A+</td>
-            <td>98</td>
-          </tr>
-          <tr>
-            <td>comparc</td>
-            <td>B-</td>
-            <td>78</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <footer>
-      <h2>High School Certificates</h2>
+    <main>
       <div>
-        <!-- Certificate 1 -->
-        <div>
+        <h2>High School Subjects</h2>
+        <ul>
+          <li>Mathematics</li>
+          <li>English</li>
+          <li>Chemistry</li>
+          <li>Biology</li>
+          <li>Physics</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>College Subjects</h2>
+        <ul>
+          <li>Software Engineering</li>
+          <li>Comparc</li>
+          <li>Web Development</li>
+          <li>HCI</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>Grades and Marks</h2>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Subject</th>
+              <th>Grade</th>
+              <th>Mark</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mathematics</td>
+              <td>A</td>
+              <td>95</td>
+            </tr>
+            <tr>
+              <td>English</td>
+              <td>B</td>
+              <td>85</td>
+            </tr>
+            <tr>
+              <td>Software Engineering</td>
+              <td>A+</td>
+              <td>98</td>
+            </tr>
+            <tr>
+              <td>Comparc</td>
+              <td>B-</td>
+              <td>78</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="certificates">
+        <div class="certificate">
           <img src="certifacate/certifacate 1.jpg" alt="Certificate 1" />
           <p>Date: January 1, 2020</p>
           <p>Subject: English</p>
-          <button onclick="zoomImage('certificate1.jpg')">Zoom</button>
         </div>
 
-        <!-- Certificate 2 -->
-        <div>
+        <div class="certificate">
           <img src="certifacate/certifacate 2.jpg" alt="Certificate 2" />
           <p>Date: February 15, 2020</p>
           <p>Subject: Mathematics</p>
-          <button onclick="zoomImage('certificate2.jpg')">Zoom</button>
         </div>
 
-        <!-- Certificate 3 -->
-        <div>
+        <div class="certificate">
           <img src="certifacate/certifacate 3.jpg" alt="Certificate 3" />
           <p>Date: March 20, 2020</p>
           <p>Subject: Science</p>
-          <button onclick="zoomImage('certificate3.jpg')">Zoom</button>
         </div>
 
-        <!-- Certificate 4 -->
-        <div>
+        <div class="certificate">
           <img src="certifacate/certifcate 4.jpg" alt="Certificate 4" />
           <p>Date: April 10, 2020</p>
-          <p>Subject: deploma</p>
-          <button onclick="zoomImage('certificate4.jpg')">Zoom</button>
+          <p>Subject: Diploma</p>
         </div>
       </div>
+    </main>
+
+    <footer>
+      <a href="home page.html">Go Back to Home Page</a>
     </footer>
   </body>
 </html>
