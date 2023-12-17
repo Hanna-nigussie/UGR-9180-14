@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <title>Contact Page</title>
+    <script src="script.js" defer></script>
   </head>
   <body class="contact__body">
     <header class="contact__header">
@@ -42,6 +43,7 @@
       </div>
 
       <div class="contact__form-container">
+        <form onsubmit="return validateForm()">
         <label for="name" class="contact__label">Name:</label>
         <input
           type="text"
@@ -49,6 +51,8 @@
           name="name"
           required
           class="contact__input"
+          autocomplete="name"
+          
         />
 
         <label for="email" class="contact__label">Email:</label>
@@ -58,6 +62,7 @@
           name="email"
           required
           class="contact__input"
+          autocomplete="email"
         />
 
         <label for="message" class="contact__label">Message:</label>
@@ -67,6 +72,7 @@
           rows="4"
           required
           class="contact__textarea"
+          autocomplete="message"
         ></textarea>
 
         <button type="submit" class="contact__button">Send</button>

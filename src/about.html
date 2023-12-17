@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <title>My Favorite Books, Photography, and Decorating Video</title>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header class="about-page__header">
@@ -84,37 +90,143 @@
 
     <div><strong>Photography</strong></div>
 
-    <div>
-      <img
-        src="images/photography 1.jpg"
-        alt="Photography 1"
-        style="max-width: 100%"
-      />
-      <p><strong>Date:</strong> Nov 1, 2022</p>
-      <p>
-        <strong
-          >Lost in the symphony of colors as the day kisses the sky goodbye. A
-          breathtaking sunset that leaves you in awe of nature's
-          artistry</strong
-        >
-      </p>
-      <a href="https://www.w3schools.com"></a>
+    <!-- First Photography Section -->
+    <div
+      id="photography_carousel_1"
+      class="swiper-container photography-carousel"
+    >
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="images/photography 1.jpg"
+            alt="Photography 1"
+            style="max-width: 100%"
+          />
+          <p><strong>Date:</strong> Nov 1, 2022</p>
+          <div class="expandable-content" id="expandableContent1">
+            <p>
+              <strong>Lost in the symphony of colors...</strong>
+              <span id="fullContent1" style="display: none">
+                as the day kisses the sky goodbye. A breathtaking sunset that
+                leaves you in awe of nature's artistry.</span
+              >
+            </p>
+            <button onclick="toggleContent('expandableContent1')">
+              Read More
+            </button>
+          </div>
+        </div>
+
+        <!-- Add more slides if needed -->
+        <div class="swiper-slide">
+          <img
+            src=" images/photography 2.jpg"
+            alt="Photography 3"
+            style="max-width: 100%"
+          />
+          <p><strong>Date:</strong> March 10, 2023</p>
+          <p>
+            <strong>Description:</strong> Another beautiful moment captured...
+          </p>
+          <a href="https://www.example.com">Read More</a>
+        </div>
+
+        <div class="swiper-slide">
+          <img
+            src="images/sky 2.jpg"
+            alt="Photography 3"
+            style="max-width: 100%"
+          />
+          <p><strong>Date:</strong> March 10, 2023</p>
+          <p>
+            <strong>Description:</strong> As the sun tries to dip below the
+            horizen, the sky becomes a canvas for the delicate dance of dusk
+          </p>
+          <a href="https://www.example.com">Read More</a>
+        </div>
+      </div>
+
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
     </div>
 
-    <div>
-      <img
-        src="images/photography 2.jpg"
-        alt="Photography 2"
-        style="max-width: 100%"
-      />
-      <p><strong>Date:</strong> Feb 15, 2022</p>
-      <p>
-        <strong
-          >As the sun prepares to dip below the horizon, the sky becomes a
-          canvas for the delicate dance of dusk.</strong
-        >
-      </p>
-      <a href="https://www.w3schools.com">Read More</a>
+    <!-- Second Photography Section -->
+    <div
+      id="photography_carousel_2"
+      class="swiper-container photography-carousel"
+    >
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="images/bird photography.jpg"
+            alt="Photography 2"
+            style="max-width: 100%"
+          />
+          <p><strong>Date:</strong> Feb 15, 2022</p>
+          <div class="expandable-content" id="expandableContent2">
+            <p>
+              <strong
+                >In the soft embrace of golden afternoon sunlight, a sleek
+                feline muse gracefully lounges upon a windowsill, eyes gleaming
+                with a mischievous glint. Whiskers twitch with curiosity as the
+                cat's languid pose captures the essence of serene
+                indulgence</strong
+              >
+              <span id="fullContent2" style="display: none">
+                The play of shadows and the velvety texture of its fur create a
+                canvas of coziness, inviting observers into a purr-fectly
+                intimate moment, where the artistry of domesticity unfolds.
+              </span>
+            </p>
+            <button onclick="toggleContent('expandableContent2')">
+              Read More
+            </button>
+          </div>
+        </div>
+
+        <!-- Add more slides if needed -->
+        <div class="swiper-slide">
+          <img
+            src="images/dog photography.jpg"
+            alt="Photography 4"
+            style="max-width: 100%"
+          />
+          <p><strong>Date:</strong> April 5, 2023</p>
+          <p>
+            <strong>Description:</strong> Amidst the golden hues of a sun-kissed
+            afternoon, a loyal companion sits in earnest contemplation, ears
+            perked and eyes filled with unwavering devotion. The dappling of
+            sunlight weaves a warm tapestry around this canine confidant,
+            capturing a moment where time seems to pause in harmony. Each strand
+            of fur tells a story of bounding joy and steadfast companionship,
+            inviting all who gaze upon this image into the heartwarming embrace
+            of a dog's timeless friendship.
+          </p>
+          <a href="https://www.example.com">Read More</a>
+        </div>
+
+        <div class="swiper-slide">
+          <img
+            src="images/cat photography.jpg"
+            alt="Photography 5"
+            style="max-width: 100%"
+          />
+          <p><strong>Date:</strong> April 5, 2023</p>
+          <p>
+            <strong>Description:</strong> In the enigmatic embrace of the night,
+            a mysterious silhouette emerges from the shadows—a feline guardian
+            of the nocturnal realm. Luminescent eyes pierce the darkness,
+            reflecting the moon's subtle glow. The contours of sleek fur remain
+            elusive, hinting at the untold adventures prowling in the obsidian
+            canvas. A whispered tale of the cat's stealth and grace unfolds, as
+            the inky night becomes its timeless playground.
+          </p>
+          <a href="https://www.example.com">Read More</a>
+        </div>
+      </div>
+
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
     </div>
 
     <h3>Video Decorating</h3>
