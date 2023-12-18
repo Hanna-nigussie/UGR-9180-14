@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <title>Contact Page</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <section
+      class="section contact__body"
+      style="
+        background-image: url('images/contact background image.jpg');
+        background-size: cover;
+        background-position: center;
+      "
+    >
+      <div class="container">
+        <header class="columns is-vcentered">
+          <div class="column is-one-fifth">
+            <img src="logo/my logo.png" alt="Logo" class="image is-128x128" />
+          </div>
+          <div class="column">
+            <h1 class="title">Contact Me</h1>
+          </div>
+        </header>
+      </div>
+
+      <div class="container">
+        <main class="columns is-multiline">
+          <div class="column is-full contact-icons">
+            <div class="columns is-mobile is-flex-direction-column">
+              <div class="column is-narrow">
+                <a
+                  href="https://facebook.com/yourprofile"
+                  class="contact__link is-flex is-align-items-center"
+                >
+                  <img
+                    src="logo/facebook.png"
+                    alt="Facebook Icon"
+                    class="image is-32x32"
+                  />
+                  <span class="ml-2">Facebook</span>
+                </a>
+              </div>
+
+              <div class="column is-narrow">
+                <a
+                  href="https://instagram.com/hannanigussie_?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"
+                  class="contact__link is-flex is-align-items-center"
+                >
+                  <img
+                    src="logo/image_2023-11-26_08-19-34.png"
+                    alt="Instagram Icon"
+                    class="image is-32x32"
+                  />
+                  <span class="ml-2">Instagram</span>
+                </a>
+              </div>
+
+              <div class="column is-narrow">
+                <a
+                  href="https://github.com/Hanna-nigussie/UGR-9180-14/tree/main/designs"
+                  class="contact__link is-flex is-align-items-center"
+                >
+                  <img
+                    src="logo/github.png"
+                    alt="GitHub Icon"
+                    class="image is-32x32"
+                  />
+                  <span class="ml-2">GitHub</span>
+                </a>
+              </div>
+
+              <div class="column is-narrow">
+                <a
+                  href="tel:+25901190577"
+                  class="contact__link is-flex is-align-items-center"
+                >
+                  <img
+                    src="logo/phone.png"
+                    alt="Phone Icon"
+                    class="image is-32x32"
+                  />
+                  <span class="ml-2">Phone</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-full">
+            <form onsubmit="return validateForm()">
+              <div class="field">
+                <label for="name" class="label">Name:</label>
+                <div class="control">
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    class="input"
+                    autocomplete="name"
+                  />
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="email" class="label">Email:</label>
+                <div class="control">
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    class="input"
+                    autocomplete="email"
+                  />
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="message" class="label">Message:</label>
+                <div class="control">
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    required
+                    class="textarea"
+                    autocomplete="message"
+                  ></textarea>
+                </div>
+              </div>
+
+              <div class="field">
+                <div class="control">
+                  <button type="submit" class="button is-primary">Send</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </main>
+      </div>
+
+      <div class="container">
+        <footer class="columns">
+          <div class="column">
+            <p>&copy; 2023 My Website. All Rights Reserved.</p>
+          </div>
+          <div class="column">
+            <a href="home page.html" class="button is-info"
+              >Go Back to Home Page</a
+            >
+          </div>
+        </footer>
+      </div>
+    </section>
+  </body>
+</html>
