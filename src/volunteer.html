@@ -4,76 +4,174 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Volunteer Page</title>
-    <link rel="stylesheet" href="volunteer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    
   </head>
-  <body>
-    <header>
-      <img src="logo/portfolio logo.png" alt="Logo" />
-      <h1>Volunteer Experiences</h1>
-    </header>
+  <body class="volunteer-page custom-background" style="background-image: url('images/volunteer background.jpg'); background-size: cover;"></body>
+    <section class="section volunteer-page__header">
+      <div class="container">
+        <img src="logo/my logo.png" alt="Logo" class="volunteer-page__logo" />
+        <h1 class="title volunteer-page__title">Volunteer Experiences</h1>
+      </div>
+    </section>
 
-    <main>
-      <div>
-        <img src="volunteer images/volunteer 1.jpg" alt="Volunteer 1" />
-        <p><strong>Date:</strong> January 1, 2022</p>
-        <p><strong>Place:</strong> Local Community Center</p>
-        <p>
-          <strong>Description:</strong> 🏡 Explored the heart of our community
-          at the local community center! 🌟 From engaging workshops to vibrant
-          cultural events, this hub is a treasure trove of connection and shared
-          experiences.
-        </p>
-        <a href="https://www.w3schools.com/">Read More</a>
-      </div>
+    <section class="section volunteer-page__main">
+      <div class="container">
+        <div class="columns is-multiline">
+          <div class="column is-6">
+            <div class="box volunteer-page__item">
+              <img
+                src="volunteer images/volunteer 1.jpg"
+                alt="Volunteer 1"
+                class="volunteer-page__image"
+              />
+              <p class="volunteer-page__date">
+                <strong>Date:</strong> January 1, 2022
+              </p>
+              <p class="volunteer-page__place">
+                <strong>Place:</strong> Local Community Center
+              </p>
+              <div
+                class="volunteer-page__description"
+                id="volunteer1Description"
+              >
+                <strong>Description:</strong>
+                <span class="short-description has-text-info"
+                  >🏡 Explored the heart of our community at the local community
+                  center! 🌟 From engaging workshops to vibrant cultural events,
+                  this hub is a treasure trove of connection and shared
+                  experiences.</span
+                >
+                <span class="full-description  has-text-info" style="display: none"
+                  >The atmosphere was filled with positive energy as we
+                  participated in various activities that promote community
+                  engagement and bonding. Connecting with people from different
+                  walks of life, we realized the importance of coming together
+                  to create a stronger and more vibrant community. Read more
+                  about our experiences and the impact on our website.</span
+                >
+              </div>
+              <button
+                class="button volunteer-page__link read-more-button"
+                onclick="toggleReadMore('volunteer1Description',this)"
+              >
+                Read More
+              </button>
+            </div>
+          </div>
 
-      <div>
-        <img src="volunteer images/volunteer 2.jpg" alt="Volunteer 2" />
-        <p><strong>Date:</strong> February 15, 2022</p>
-        <p><strong>Place:</strong> Animal Shelter</p>
-        <p>
-          <strong>Description:</strong>
-          "🐾 Spent a heartwarming day volunteering at the local animal shelter!
-          🐶❤️ From the wagging tails of excited dogs to the gentle purrs of
-          grateful cats, every moment was a reminder of the joy and love these
-          animals bring into our lives. The dedicated staff and fellow
-          volunteers create a compassionate community working tirelessly to give
-          these furry friends a second chance. Feeling grateful to have been
-          part of their world, even if just for a day. Consider spending some
-          time volunteering at your local shelter—it's an experience that
-          touches your soul. 🐾 .
-        </p>
-        <a href="https://www.w3schools.com/">Read More</a>
-      </div>
+          <div class="column is-6">
+            <div class="box volunteer-page__item">
+              <img
+                src="volunteer images/volunteer 2.jpg"
+                alt="Volunteer 2"
+                class="volunteer-page__image"
+              />
+              <p class="volunteer-page__date">
+                <strong>Date:</strong> February 15, 2022
+              </p>
+              <p class="volunteer-page__place">
+                <strong>Place:</strong> Animal Shelter
+              </p>
+              <div
+                class="volunteer-page__description"
+                id="volunteer2Description"
+              >
+                <strong>Description:</strong>
+                <span class="short-description has-text-info"
+                  >🐾 Spent a heartwarming day volunteering at the local animal
+                  shelter! 🐶❤️ From the wagging tails of excited dogs to the
+                  gentle purrs of grateful cats, every moment was a reminder of
+                  the joy and love these animals bring into our lives.</span
+                >
+                <span class="full-description has-text-info" style="display: none"
+                  >The dedicated staff and fellow volunteers create a
+                  compassionate community working tirelessly to give these furry
+                  friends a second chance. Feeling grateful to have been part of
+                  their world, even if just for a day. Consider spending some
+                  time volunteering at your local shelter—it's an experience
+                  that touches your soul. 🐾 .</span
+                >
+              </div>
+              <button
+                class="button volunteer-page__link read-more-button"
+                onclick="toggleReadMore('volunteer2Description',this)"
+              >
+                Read More
+              </button>
+            </div>
+          </div>
 
-      <div>
-        <iframe
-          width="100%"
-          height="315"
-          src="https://www.youtube.com/embed/t32lznvZz7E?si=JVrP3fH1Mi6U1-uD"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
-        <p><strong>Name:</strong> Volunteer Experience Highlights</p>
-        <p>
-          <strong>Description:</strong> Watch this video to see highlights from
-          our volunteer experiences.
-        </p>
-        <a href="https://www.w3schools.com/">Read More</a>
+          <div class="column is-12">
+            <div class="box volunteer-page__item">
+              <iframe
+                width="100%"
+                height="315"
+                src="https://www.youtube.com/embed/t32lznvZz7E?si=JVrP3fH1Mi6U1-uD"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <p class="volunteer-page__video-name">
+                <strong>Name:</strong> Volunteer Experience Highlights
+              </p>
+              <p class="volunteer-page__video-description">
+                <strong>Description:</strong> Watch this video to see highlights
+                from our volunteer experiences.
+              </p>
+              <a
+                href="https://www.w3schools.com/"
+                class="button volunteer-page__link"
+                >Read More</a
+              >
+            </div>
+          </div>
+        </div>
       </div>
-    </main>
+    </section>
 
-    <footer>
-      <div>
-        <img src="logo/company logo 1.png" alt="Company 1 Logo" />
-        <p>Contact: 123-456-7890</p>
+    <section class="section volunteer-page__footer">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-4">
+            <img
+              src="logo/company logo 1.png"
+              alt="Company 1 Logo"
+              class="volunteer-page__company-logo"
+            />
+            <p class="volunteer-page__contact">Contact: 123-456-7890</p>
+          </div>
+          <div class="column is-4">
+            <img
+              src="logo/company logo 2.png"
+              alt="Company 2 Logo"
+              class="volunteer-page__company-logo"
+            />
+            <p class="volunteer-page__contact">Contact: 987-654-3210</p>
+          </div>
+        </div>
+        <a href="home page.html" class="button volunteer-page__back-linkn button is-info"
+          >Back to Home</a
+        >
       </div>
-      <div>
-        <img src="logo/company logo 2.png" alt="Company 2 Logo" />
-        <p>Contact: 987-654-3210</p>
-      </div>
-      <a href="home page.html">Back to Home</a>
-    </footer>
+    </section>
+    <script>
+    function toggleReadMore(descriptionId, button) {
+      const expandableContent = document.getElementById(descriptionId);
+      const fullDescription = expandableContent.querySelector('.full-description');
+    
+      if (fullDescription.style.display === 'none' || fullDescription.style.display === '') {
+        fullDescription.style.display = 'inline';
+        button.textContent = 'Read Less';
+      } else {
+        fullDescription.style.display = 'none';
+        button.textContent = 'Read More';
+      }
+    }
+    </script>
   </body>
 </html>

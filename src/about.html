@@ -1,146 +1,385 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="about-page">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="about.css" />
-    <title>My Favorite Books, Photography, and Decorating Video</title>
-  </head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <title class="has-text-danger has-text-weight-bold has-text-centered">
+      My Favorite Books, Photography, and Decorating Video
+    </title>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+ </head>
+
   <body>
-    <header>
-      <img src="logo/portfolio logo.png" alt="Logo" />
-      <h1>Interests</h1>
-    </header>
+    <section class="section about-page">
+      <div class="container">
+        <div class="columns is-vcentered">
+          <div class="column">
+            <figure class="image is-64x64">
+              <img src="logo/my logo.png" alt="Logo" />
+            </figure>
+          </div>
+          <div class="column">
+            <h1 class="title about-page__title">Interests</h1>
+          </div>
+        </div>
+        <div class="columns is-multiline">
+          <!-- Book 1 -->
+          <div class="column is-half-desktop">
+            <div class="box about-page__book">
+              <figure class="image is-4by5">
+                <img src="images/looking for alaska.jpg" alt="Book 1" />
+              </figure>
+              <div class="content">
+                <p class="has-text-warning">
+                  <strong>Favorite Quote:</strong> "if people were rain i was
+                  drizzle and she was a hurricane."
+                </p>
+                <p><strong>Date:</strong> Feb 30, 2022</p>
+                <p><strong>Author:</strong> John Green</p>
+                <audio controls class="about-page__audio">
+                  <source
+                    src="audio/Dead Man's Island part 05.mp3"
+                    type="audio/mp3"
+                  />
+                </audio>
+              </div>
+            </div>
+          </div>
 
-    <h3>My Favorite Books, Photography, and Decorating Video</h3>
+          <!-- Book2 -->
+          <div class="column is-half-desktop">
+            <div class="box about-page__book">
+              <figure class="image is-4by5">
+                <img src="images/court of mist and fury.jpg" alt="Book 2" />
+              </figure>
+              <div class="content">
+                <p class="has-text-warning">
+                  <strong>Favorite Quote:</strong> "to the stars who listen. and
+                  the dreams that are answered."
+                </p>
+                <p><strong>Date:</strong> Feb 30, 2022</p>
+                <p><strong>Author:</strong> Sarah J. MASS</p>
+                <audio controls class="about-page__audio">
+                  <source src="audio/hhh - Fujii Kaze.mp3" type="audio/mp3" />
+                </audio>
+              </div>
+            </div>
+          </div>
 
-    <div class="book-container">
-      <div class="book">
-        <img src="images/looking for alaska.jpg" alt="Book 1" />
-        <p>
-          <strong>Favorite Quote:</strong> "if people were rain i was drizzle
-          and she was a hurricane."
-        </p>
-        <p><strong>Date:</strong> Feb 30, 2022</p>
-        <p><strong>Author:</strong> John Green</p>
-        <audio controls>
-          <source src="audio/Dead Man's Island part 05.mp3" type="audio/mp3" />
-        </audio>
+          <!-- Book3 -->
+          <div class="column is-half-desktop">
+            <div class="box about-page__book">
+              <figure class="image is-4by5">
+                <img src="images/sarah dessen.jpg" alt="Book 3" />
+              </figure>
+              <div class="content">
+                <p class="has-text-warning">
+                  <strong>Favorite Quote:</strong> "it was just perfect just
+                  right all at once"
+                </p>
+                <p><strong>Date:</strong> Feb 15, 2022</p>
+                <p><strong>Author:</strong> Sarah Dessen</p>
+                <audio controls class="about-page__audio">
+                  <source
+                    src="audio/Dead Man's Island Part 1.mp3"
+                    type="audio/mp3"
+                  />
+                </audio>
+              </div>
+            </div>
+          </div>
+
+          <!-- Book 4 -->
+          <div class="column is-half-desktop">
+            <div class="box about-page__book">
+              <figure class="image is-4by5">
+                <img src="images/throne of glass.jpg" alt="Book 4" />
+              </figure>
+              <div class="content">
+                <p class="has-text-warning">
+                  <strong>Favorite Quote:</strong> "you could rattle the stars
+                  you could do anything.if only you dared"
+                </p>
+                <p><strong>Date:</strong> Feb 15, 2022</p>
+                <p><strong>Author:</strong> Sarah J Mars</p>
+                <audio controls class="about-page__audio">
+                  <source src="audio/hhh - Fujii Kaze.mp3" type="audio/mp3" />
+                </audio>
+              </div>
+            </div>
+          </div>
+
+          <!-- Book5 -->
+          <div class="column is-half-desktop">
+            <div class="box about-page__book">
+              <figure class="image is-4by5">
+                <img src="images/Fydor.jpg" alt="Book 5" />
+              </figure>
+              <div class="content">
+                <p class="has-text-warning">
+                  <strong>Favorite Quote:</strong> "i am a fool with a heart but
+                  no brains and you are a fool with brains but no heart; and
+                  we're both unhappy, and we both suffer."
+                </p>
+                <p><strong>Date:</strong> Nov 11, 2022</p>
+                <p><strong>Author:</strong> Fyodor Dostoyevsky</p>
+                <audio controls class="about-page__audio">
+                  <source
+                    src="audio/Dead Man's Island Part 1.mp3"
+                    type="audio/mp3"
+                  />
+                </audio>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 class="subtitle">Photography</h3>
+        <div class="columns">
+          <div class="column is-half">
+            <div id="photography_carousel_1" class="carousel">
+              <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item">
+                  <img
+                    src="images/photography 1.jpg"
+                    alt="Photography 1"
+                    style="max-width: 100%"
+                  />
+                  <p class="is-info"><strong>Date:</strong> Nov 1, 2022</p>
+                  <div class="expandable-content" id="expandableContent1">
+                    <p class="is-info">
+                      <strong> description:</strong>Lost in the symphony of colors...
+                      <span id="fullContent1" style="display: none">
+                        as the day kisses the sky goodbye. A breathtaking sunset
+                        that leaves you in awe of nature's artistry.
+                      </span>
+                    </p>
+                    <button onclick="toggleContent('expandableContent1')">
+                      Read More
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                  <img
+                    src="images/photography 2.jpg"
+                    alt="Photography 2"
+                    style="max-width: 100%"
+                  />
+                  <p class="is-info"><strong>Date:</strong> March 10, 2023</p>
+                  <p class="is-info">
+                    <strong>Description:</strong> Another beautiful moment
+                    captured...
+                  </p>
+                  <a href="https://www.example.com">Read More</a>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                  <img
+                    src="images/sky 2.jpg"
+                    alt="Photography 3"
+                    style="max-width: 100%"
+                  />
+                  <p class="is-info"><strong>Date:</strong> March 10, 2023</p>
+                  <p class="is-info">
+                    <strong>Description:</strong> As the sun tries to dip below
+                    the horizen, the sky becomes a canvas for the delicate dance
+                    of dusk
+                  </p>
+                  <a href="https://www.example.com">Read More</a>
+                </div>
+              </div>
+              <div class="carousel-pagination"></div>
+            </div>
+          </div>
+          <div class="column is-half">
+            <div id="photography_carousel_2" class="carousel">
+              <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item">
+                  <img
+                    src="images/bird photography.jpg"
+                    alt="Photography 2"
+                    style="max-width: 100%"
+                  />
+                  <p class="is-info"><strong>Date:</strong> Feb 15, 2022</p>
+                  <div class="expandable-content" id="expandableContent2">
+                    <p class="is-info">
+                      <strong >description:</strong>
+                        >In the soft embrace of golden afternoon sunlight, a
+                        sleek feline muse gracefully lounges upon a
+                        windowsill...</strong
+                      >
+                      <span id="fullContent2" style="display: none">
+                        The play of shadows and the velvety texture of its fur
+                        create a canvas of coziness, inviting observers into a
+                        purr-fectly intimate moment, where the artistry of
+                        domesticity unfolds.
+                      </span>
+                    </p>
+                    <button onclick="toggleContent('expandableContent2')">
+                      Read More
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                  <img
+                    src="images/dog photography.jpg"
+                    alt="Photography 4"
+                    style="max-width: 100%"
+                  />
+                  <p class="is-info"><strong>Date:</strong> April 5, 2023</p>
+                  <p class="is-info">
+                    <strong>Description:</strong> Amidst the golden hues of a
+                    sun-kissed afternoon, a loyal companion sits in earnest
+                    contemplation, ears perked and eyes filled with unwavering
+                    devotion. The dappling of sunlight weaves a warm tapestry
+                    around this canine confidant, capturing a moment where time
+                    seems to pause in harmony. Each strand of fur tells a story
+                    of bounding joy and steadfast companionship, inviting all
+                    who gaze upon this image into the heartwarming embrace of a
+                    dog's timeless friendship.
+                  </p>
+                  <a href="https://www.example.com">Read More</a>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                  <img
+                    src="images/cat photography.jpg"
+                    alt="Photography 5"
+                    style="max-width: 100%"
+                  />
+                  <p class="is-info"><strong>Date:</strong> April 5, 2023</p>
+                  <p class="is-info">
+                    <strong>Description:</strong> In the enigmatic embrace of
+                    the night, a mysterious silhouette emerges from the
+                    shadows—a feline guardian of the nocturnal realm.
+                    Luminescent eyes pierce the darkness, reflecting the moon's
+                    subtle glow. The contours of sleek fur remain elusive,
+                    hinting at the untold adventures prowling in the obsidian
+                    canvas. A whispered tale of the cat's stealth and grace
+                    unfolds, as the inky night becomes its timeless playground.
+                  </p>
+                  <a href="https://www.example.com">Read More</a>
+                </div>
+              </div>
+              <div class="carousel-pagination"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video Section -->
+
+        <h3 class="subtitle">Video Decorating</h3>
+        <div>
+          <iframe
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/lflXBW0l9rU?si=wnh1vpVCU-999TCt"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <p>
+            <strong>Description:</strong> Elevate your space with a touch of
+            creativity! In this decoration video, we dive into the world of
+            design and transformation. From cozy corners to chic centerpieces,
+            discover tips and tricks to bring style and personality into every
+            corner of your home. Get ready to be inspired, and let's turn your
+            space into a haven of beauty and charm.
+          </p>
+          <a href="https://www.w3schools.com" class="button is-link"
+            >Watch More</a
+          >
+        </div>
       </div>
 
-      <div class="book">
-        <img src="images/court of mist and fury.jpg" alt="Book 2" />
-        <p>
-          <strong>Favorite Quote:</strong> "to the stars who listen. and the
-          dreams that are answered."
-        </p>
-        <p><strong>Date:</strong> Feb 30, 2022</p>
-        <p><strong>Author:</strong> Sarah J. MASS</p>
-        <audio controls>
-          <source src="audio/hhh - Fujii Kaze.mp3" type="audio/mp3" />
-        </audio>
+      <div class="has-text-centered">
+        <a href="home page.html" class="button is-primary">Go Back to Home</a>
       </div>
+    </section>
 
-      <div class="book">
-        <img src="images/sarah dessen.jpg" alt="Book 3" />
-        <p>
-          <strong>Favorite Quote:</strong> "it was just perfect just right all
-          at once"
-        </p>
-        <p><strong>Date:</strong> Feb 15, 2022</p>
-        <p><strong>Author:</strong> Sarah Dessen</p>
-        <audio controls>
-          <source src="audio/Dead Man's Island Part 1.mp3" type="audio/mp3" />
-        </audio>
-      </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var swiper1 = new Swiper("#photography_carousel_1", {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
 
-      <div class="book">
-        <img src="images/throne of glass.jpg" alt="Book 4" />
-        <p>
-          <strong>Favorite Quote:</strong> "you could rattle the stars you could
-          do anything.if only you dared"
-        </p>
-        <p><strong>Date:</strong> Feb 15, 2022</p>
-        <p><strong>Author:</strong> Sarah J Mars</p>
-        <audio controls>
-          <source src="audio/hhh - Fujii Kaze.mp3" type="audio/mp3" />
-        </audio>
-      </div>
+        var swiper2 = new Swiper("#photography_carousel_2", {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      });
+      function toggleContent(elementId) {
+        var expandableContent = document.getElementById(elementId);
+        var fullContent = expandableContent.querySelector(
+          ".expandable-content > p > span"
+        );
+        var button = expandableContent.querySelector(
+          ".expandable-content > button"
+        );
 
-      <div class="book">
-        <img src="images/Fydor.jpg" alt="Book 5" />
-        <p>
-          <strong>Favorite Quote:</strong> "i am a fool with a heart but no
-          brains and you are a fool with brains but no heart; and we're both
-          unhappy, and we both suffer."
-        </p>
-        <p><strong>Date:</strong> Nov 11, 2022</p>
-        <p><strong>Author:</strong> Fyodor Dostoyevsky</p>
-        <audio controls>
-          <source src="audio/Dead Man's Island Part 1.mp3" type="audio/mp3" />
-        </audio>
-      </div>
-    </div>
+        if (
+          fullContent.style.display === "none" ||
+          fullContent.style.display === ""
+        ) {
+          fullContent.style.display = "inline";
+          button.innerText = "Read Less";
+        } else {
+          fullContent.style.display = "none";
+          button.innerText = "Read More";
+        }
+      }
 
-    <div><strong>Photography</strong></div>
+      document.addEventListener("DOMContentLoaded", function () {
+        const contentElements = document.querySelectorAll(
+          ".about-page__book img, .about-page__audio, .swiper-slide img, .swiper-slide p, iframe, p, .about-page__logo, .about-page__title"
+        );
 
-    <div>
-      <img
-        src="images/photography 1.jpg"
-        alt="Photography 1"
-        style="max-width: 100%"
-      />
-      <p><strong>Date:</strong> Nov 1, 2022</p>
-      <p>
-        <strong
-          >Lost in the symphony of colors as the day kisses the sky goodbye. A
-          breathtaking sunset that leaves you in awe of nature's
-          artistry</strong
-        >
-      </p>
-      <a href="https://www.w3schools.com"></a>
-    </div>
+        contentElements.forEach((element) => {
+          element.addEventListener("mousemove", function (e) {
+            const boundingBox = this.getBoundingClientRect();
+            const mouseX = e.clientX - boundingBox.left;
+            const mouseY = e.clientY - boundingBox.top;
 
-    <div>
-      <img
-        src="images/photography 2.jpg"
-        alt="Photography 2"
-        style="max-width: 100%"
-      />
-      <p><strong>Date:</strong> Feb 15, 2022</p>
-      <p>
-        <strong
-          >As the sun prepares to dip below the horizon, the sky becomes a
-          canvas for the delicate dance of dusk.</strong
-        >
-      </p>
-      <a href="https://www.w3schools.com">Read More</a>
-    </div>
+            const percentX = mouseX / boundingBox.width - 0.5;
+            const percentY = mouseY / boundingBox.height - 0.5;
 
-    <h3>Video Decorating</h3>
-    <div>
-      <iframe
-        width="100%"
-        height="315"
-        src="https://www.youtube.com/embed/lflXBW0l9rU?si=wnh1vpVCU-999TCt"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
-      <p>
-        <strong>Description:</strong> Elevate your space with a touch of
-        creativity! In this decoration video, we dive into the world of design
-        and transformation. From cozy corners to chic centerpieces, discover
-        tips and tricks to bring style and personality into every corner of your
-        home. Get ready to be inspired, and let's turn your space into a haven
-        of beauty and charm.
-      </p>
-      <a href="https://www.w3schools.com">Watch More</a>
-    </div>
+            const moveX = percentX * 10;
+            const moveY = percentY * 10;
 
-    <div class="back-to-home">
-      <a href="home page.html"> Go Back to Home </a>
-    </div>
+            this.style.transform = `translate(${moveX}px, ${moveY}px)`;
+          });
+
+          element.addEventListener("mouseleave", function () {
+            this.style.transform = "translate(0, 0)";
+          });
+        });
+      });
+    </script>
   </body>
 </html>
