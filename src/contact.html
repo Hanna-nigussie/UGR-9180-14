@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" class="contact__html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/output.css" />
+    <script src="Js/script.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const growElements = document.querySelectorAll(".grow-hover");
+
+        growElements.forEach((element) => {
+          element.addEventListener("mouseover", function () {
+            this.style.transform = "scale(1.1)";
+          });
+
+          element.addEventListener("mouseout", function () {
+            this.style.transform = "scale(1)";
+          });
+        });
+      });
+    </script>
+    <title>Contact Page</title>
+  </head>
+  <body
+    class="contact__body bg-cover bg-center bg-contact-image text-rose-300"
+    style="background-image: url('images/contact background image.jpg')"
+  >
+    <header class="contact__header flex items-center p-5">
+      <img
+        src="logo/my logo.png"
+        alt="Logo"
+        class="max-w-24 max-h-24 grow-hover"
+      />
+      <h1 class="m-0 text-pink-400 font-bold text-3xl">Contact Me</h1>
+    </header>
+
+    <main class="contact__main flex flex-col mt-20">
+      <div class="contact__div flex flex-col gap-2 bg-white-100">
+        <a
+          href="https://facebook.com/yourprofile"
+          class="contact__link flex items-start gap-1 bg-opacity-30 p-1 rounded"
+        >
+          <img
+            src="logo/facebook.png"
+            alt="Facebook Icon"
+            class="w-6 h-6 grow-hover"
+          />
+          <span class="text-xs text-gray-600">Facebook</span>
+        </a>
+
+        <a
+          href="https://instagram.com/hannanigussie_?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"
+          class="contact__link flex items-start gap-1 bg-opacity-30 p-1 rounded"
+        >
+          <img
+            src="logo/image_2023-11-26_08-19-34.png"
+            alt="Instagram Icon"
+            class="w-6 h-6 grow-hover"
+          />
+          <span class="text-xs text-gray-600">Instagram</span>
+        </a>
+
+        <a
+          href="https://github.com/Hanna-nigussie/UGR-9180-14/tree/main/designs"
+          class="contact__link flex items-start gap-1 bg-opacity-30 p-1 rounded"
+        >
+          <img
+            src="logo/github.png"
+            alt="GitHub Icon"
+            class="w-6 h-6 grow-hover"
+          />
+          <span class="text-xs text-gray-600">GitHub</span>
+        </a>
+
+        <a
+          href="tel:+25901190577"
+          class="contact__link flex items-start gap-1 bg-opacity-30 p-1 rounded"
+        >
+          <img
+            src="logo/phone.png"
+            alt="Phone Icon"
+            class="w-6 h-6 grow-hover"
+          />
+          <span class="text-xs text-gray-600">Phone</span>
+        </a>
+      </div>
+      <div
+        class="contact__form-container flex flex-col gap-10 mt-20 bg-rose-800 bg-opacity-30 p-5 rounded border-2 border-brown-800"
+      >
+        <form onsubmit="return validateForm()">
+          <label for="name" class="contact__label text-lg text-gray-600"
+            >Name:</label
+          >
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            class="contact__input w-full p-3 border border-rose-300 rounded grow-hover"
+            autocomplete="name"
+          />
+
+          <label for="email" class="contact__label text-lg mt-4 text-gray-600"
+            >Email:</label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            class="contact__input w-full p-3 border border-rose-500 rounded focus:outline-none focus:border-rose-700 grow-hover"
+            autocomplete="email"
+          />
+
+          <label for="message" class="contact__label text-lg mt-4 text-gray-600"
+            >Message:</label
+          >
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            required
+            class="contact__textarea w-full p-3 border border-rose-500 rounded resize-y focus:outline-none focus:border-rose-700 grow-hover"
+            autocomplete="message"
+          ></textarea>
+
+          <button
+            type="submit"
+            class="contact__button w-full p-3 bg-gray-800 text-white border-none rounded cursor-pointer grow-hover hover:bg-gray-900"
+          >
+            Send
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <footer
+      class="contact__footer mt-20 text-center flex justify-between items-center p-5"
+    >
+      <p class="m-0">&copy; 2023 My Website. All Rights Reserved.</p>
+      <a
+        href="home page.html"
+        class="contact__footer-link inline-block p-3 bg-gray-800 text-white no-underline rounded"
+        >Go Back to Home Page</a
+      >
+    </footer>
+  </body>
+</html>
