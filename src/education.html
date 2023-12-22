@@ -4,18 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Education Page</title>
-    <link rel="stylesheet" href="education.css" />
+    <link rel="stylesheet" href="output.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <script src="script.js" defer></script>
   </head>
-  <body>
-    <header>
-      <img src="logo/portfolio logo.png" alt="Logo" />
-      <h1>My Education</h1>
+
+  <body
+    class="education bg-cover bg-center"
+    style="background-image: url('images/education background image.jpg')"
+  >
+    <header
+      class="education-header flex flex-col items-center justify-center p-10 bg-black bg-opacity-50"
+    >
+      <img
+        src="logo/my logo.png"
+        alt="Logo"
+        class="education-logo max-w-full h-auto"
+      />
+      <h1 class="education-title text-center text-red-500 text-xl font-bold">
+        My Education
+      </h1>
     </header>
 
-    <main>
-      <div>
-        <h2>High School Subjects</h2>
-        <ul>
+    <main class="education-main flex flex-col gap-20 p-20">
+      <div class="education-high-school">
+        <h2 class="education-section-title text-green-800 text-2xl font-bold">
+          High School Subjects
+        </h2>
+        <ul class="education-list text-yellow-500 px-6 list-disc">
           <li>Mathematics</li>
           <li>English</li>
           <li>Chemistry</li>
@@ -24,9 +44,11 @@
         </ul>
       </div>
 
-      <div>
-        <h2>College Subjects</h2>
-        <ul>
+      <div class="education-college">
+        <h2 class="education-section-title text-green-800 text-2xl font-bold">
+          College Subjects
+        </h2>
+        <ul class="education-list text-yellow-500 px-6 list-disc">
           <li>Software Engineering</li>
           <li>Comparc</li>
           <li>Web Development</li>
@@ -34,70 +56,113 @@
         </ul>
       </div>
 
-      <div>
-        <h2>Grades and Marks</h2>
-        <table border="1">
+      <div class="education-grades">
+        <h2
+          class="education-section-title text-green-500 text-3xl font-bold mb-6"
+        >
+          Grades and Marks
+        </h2>
+        <table class="education-table w-full border-collapse text-red-500">
           <thead>
             <tr>
-              <th>Subject</th>
-              <th>Grade</th>
-              <th>Mark</th>
+              <th class="border border-purple-500 border-2 p-2 text-left">
+                Subject
+              </th>
+              <th class="border border-purple-500 border-2 p-2 text-left">
+                Grade
+              </th>
+              <th class="border border-purple-500 border-2 p-2 text-left">
+                Mark
+              </th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Mathematics</td>
-              <td>A</td>
-              <td>95</td>
+              <td class="border border-purple-500 border-2 p-2">Mathematics</td>
+              <td class="border border-purple-500 border-2 p-2">A</td>
+              <td class="border border-purple-500 border-2 p-2">95</td>
             </tr>
             <tr>
-              <td>English</td>
-              <td>B</td>
-              <td>85</td>
+              <td class="border border-purple-500 border-2 p-2">English</td>
+              <td class="border border-purple-500 border-2 p-2">B</td>
+              <td class="border border-purple-500 border-2 p-2">85</td>
             </tr>
             <tr>
-              <td>Software Engineering</td>
-              <td>A+</td>
-              <td>98</td>
+              <td class="border border-purple-500 border-2 p-2">
+                Software Engineering
+              </td>
+              <td class="border border-purple-500 border-2 p-2">A+</td>
+              <td class="border border-purple-500 border-2 p-2">98</td>
             </tr>
             <tr>
-              <td>Comparc</td>
-              <td>B-</td>
-              <td>78</td>
+              <td class="border border-purple-500 border-2 p-2">Comparc</td>
+              <td class="border border-purple-500 border-2 p-2">B-</td>
+              <td class="border border-purple-500 border-2 p-2">78</td>
             </tr>
           </tbody>
         </table>
       </div>
 
-      <div class="certificates">
-        <div class="certificate">
-          <img src="certifacate/certifacate 1.jpg" alt="Certificate 1" />
-          <p>Date: January 1, 2020</p>
-          <p>Subject: English</p>
+      <div class="education-certificates flex flex-wrap gap-20">
+        <div class="education-certificate relative text-center flex-1">
+          <img
+            src="certifacate/certifacate 1.jpg"
+            alt="Certificate 1"
+            class="education-certificate-img max-w-full h-auto"
+          />
+          <p class="text-red-800">Date: January 1, 2020</p>
+          <p class="text-red-800">Subject: English</p>
         </div>
 
-        <div class="certificate">
-          <img src="certifacate/certifacate 2.jpg" alt="Certificate 2" />
-          <p>Date: February 15, 2020</p>
-          <p>Subject: Mathematics</p>
+        <div class="education-certificate relative text-center flex-1">
+          <img
+            src="certifacate/certifacate 2.jpg"
+            alt="Certificate 2"
+            class="education-certificate-img max-w-full h-auto"
+          />
+          <p class="text-red-800">Date: February 15, 2020</p>
+          <p class="text-red-800">Subject: Mathematics</p>
         </div>
 
-        <div class="certificate">
-          <img src="certifacate/certifacate 3.jpg" alt="Certificate 3" />
-          <p>Date: March 20, 2020</p>
-          <p>Subject: Science</p>
+        <div class="education-certificate relative text-center flex-1">
+          <img
+            src="certifacate/certifacate 3.jpg"
+            alt="Certificate 3"
+            class="education-certificate-img max-w-full h-auto"
+          />
+          <p class="text-red-800">Date: March 20, 2020</p>
+          <p class="text-red-800">Subject: Science</p>
         </div>
 
-        <div class="certificate">
-          <img src="certifacate/certifcate 4.jpg" alt="Certificate 4" />
-          <p>Date: April 10, 2020</p>
-          <p>Subject: Diploma</p>
+        <div class="education-certificate relative text-center flex-1">
+          <img
+            src="certifacate/certifcate 4.jpg"
+            alt="Certificate 4"
+            class="education-certificate-img max-w-full h-auto"
+          />
+          <p class="text-red-800">Date: April 10, 2020</p>
+          <p class="text-red-800">Subject: Diploma</p>
         </div>
       </div>
-    </main>
 
-    <footer>
-      <a href="home page.html">Go Back to Home Page</a>
+      <div id="certificate-slider" class="education-certificates">
+        <button id="prev-btn" class="bg-blue-500 text-white px-4 py-2">
+          Previous
+        </button>
+        <button id="next-btn" class="bg-blue-500 text-white px-4 py-2">
+          Next
+        </button>
+      </div>
+    </main>
+    <footer
+      class="education-footer p-4 bg-black bg-opacity-50 flex justify-end"
+    >
+      <button
+        onclick="window.location.href='home page.html'"
+        class="education-footer-button text-white px-2 py-1 border border-white rounded bg-blue-500 hover:bg-blue-700"
+      >
+        Go Back to Homepage
+      </button>
     </footer>
   </body>
 </html>

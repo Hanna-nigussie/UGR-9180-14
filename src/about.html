@@ -1,124 +1,260 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="about-page">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="output.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <title>My Favorite Books, Photography, and Decorating Video</title>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js" defer></script>
   </head>
-  <body>
-    <header>
-      <img src="logo/portfolio logo.png" alt="Logo" />
-      <h1>Interests</h1>
+  <body
+    class="font-sans bg-cover bg-center text-teal-500"
+    style="background-image: url('images/about background image.jpg')"
+  >
+    <header class="text-center">
+      <img src="logo/my logo.png" alt="Logo" class="w-16 h-auto mx-auto" />
+      <h1 class="text-3xl text-pink-200">Interests</h1>
     </header>
 
-    <h3>My Favorite Books, Photography, and Decorating Video</h3>
+    <h3 class="text-2xl mt-4 text-pink-200">
+      My Favorite Books, Photography, and Decorating Video
+    </h3>
 
-    <div class="book-container">
-      <div class="book">
-        <img src="images/looking for alaska.jpg" alt="Book 1" />
-        <p>
-          <strong>Favorite Quote:</strong> "if people were rain i was drizzle
-          and she was a hurricane."
-        </p>
-        <p><strong>Date:</strong> Feb 30, 2022</p>
-        <p><strong>Author:</strong> John Green</p>
-        <audio controls>
-          <source src="audio/Dead Man's Island part 05.mp3" type="audio/mp3" />
-        </audio>
-      </div>
+    <div class="flex flex-wrap justify-between mt-4">
+      <!-- Books Section -->
+      <div class="grid grid-cols-2 gap-8">
+        <!-- Book 1 -->
+        <div class="about-page__book ml-6">
+          <img src="images/looking for alaska.jpg" alt="Book 1" />
+          <p class="text-yellow-500">
+            <strong>Favorite Quote:</strong> "if people were rain i was drizzle
+            and she was a hurricane."
+          </p>
+          <p class="text-yellow-500"><strong>Date:</strong> Feb 30, 2022</p>
+          <p class="text-yellow-500"><strong>Author:</strong> John Green</p>
+          <audio controls class="about-page__audio">
+            <source
+              src="audio/Dead Man's Island part 05.mp3"
+              type="audio/mp3"
+            />
+          </audio>
+        </div>
 
-      <div class="book">
-        <img src="images/court of mist and fury.jpg" alt="Book 2" />
-        <p>
-          <strong>Favorite Quote:</strong> "to the stars who listen. and the
-          dreams that are answered."
-        </p>
-        <p><strong>Date:</strong> Feb 30, 2022</p>
-        <p><strong>Author:</strong> Sarah J. MASS</p>
-        <audio controls>
-          <source src="audio/hhh - Fujii Kaze.mp3" type="audio/mp3" />
-        </audio>
-      </div>
+        <!-- Book 2 -->
+        <div class="about-page__book">
+          <img src="images/court of mist and fury.jpg" alt="Book 2" />
+          <p class="text-yellow-500">
+            <strong>Favorite Quote:</strong> "to the stars who listen. and the
+            dreams that are answered."
+          </p>
+          <p class="text-yellow-500"><strong>Date:</strong> Feb 30, 2022</p>
+          <p class="text-yellow-500"><strong>Author:</strong> Sarah J. MASS</p>
+          <audio controls class="about-page__audio">
+            <source src="audio/hhh - Fujii Kaze.mp3" type="audio/mp3" />
+          </audio>
+        </div>
 
-      <div class="book">
-        <img src="images/sarah dessen.jpg" alt="Book 3" />
-        <p>
-          <strong>Favorite Quote:</strong> "it was just perfect just right all
-          at once"
-        </p>
-        <p><strong>Date:</strong> Feb 15, 2022</p>
-        <p><strong>Author:</strong> Sarah Dessen</p>
-        <audio controls>
-          <source src="audio/Dead Man's Island Part 1.mp3" type="audio/mp3" />
-        </audio>
-      </div>
+        <!-- Book 3 -->
+        <div class="about-page__book px-6">
+          <img src="images/sarah dessen.jpg" alt="Book 3" />
+          <p class="text-yellow-500">
+            <strong>Favorite Quote:</strong> "it was just perfect just right all
+            at once"
+          </p>
+          <p class="text-yellow-500"><strong>Date:</strong> Feb 15, 2022</p>
+          <p class="text-yellow-500"><strong>Author:</strong> Sarah Dessen</p>
+          <audio controls class="about-page__audio">
+            <source src="audio/Dead Man's Island Part 1.mp3" type="audio/mp3" />
+          </audio>
+        </div>
 
-      <div class="book">
-        <img src="images/throne of glass.jpg" alt="Book 4" />
-        <p>
-          <strong>Favorite Quote:</strong> "you could rattle the stars you could
-          do anything.if only you dared"
-        </p>
-        <p><strong>Date:</strong> Feb 15, 2022</p>
-        <p><strong>Author:</strong> Sarah J Mars</p>
-        <audio controls>
-          <source src="audio/hhh - Fujii Kaze.mp3" type="audio/mp3" />
-        </audio>
-      </div>
+        <!-- Book 4 -->
+        <div class="about-page__book">
+          <img src="images/throne of glass.jpg" alt="Book 4" />
+          <p class="text-yellow-500">
+            <strong>Favorite Quote:</strong> "you could rattle the stars you
+            could do anything.if only you dared"
+          </p>
+          <p class="text-yellow-500"><strong>Date:</strong> Feb 15, 2022</p>
+          <p class="text-yellow-500"><strong>Author:</strong> Sarah J Mars</p>
+          <audio controls class="about-page__audio">
+            <source src="audio/hhh - Fujii Kaze.mp3" type="audio/mp3" />
+          </audio>
+        </div>
 
-      <div class="book">
-        <img src="images/Fydor.jpg" alt="Book 5" />
-        <p>
-          <strong>Favorite Quote:</strong> "i am a fool with a heart but no
-          brains and you are a fool with brains but no heart; and we're both
-          unhappy, and we both suffer."
-        </p>
-        <p><strong>Date:</strong> Nov 11, 2022</p>
-        <p><strong>Author:</strong> Fyodor Dostoyevsky</p>
-        <audio controls>
-          <source src="audio/Dead Man's Island Part 1.mp3" type="audio/mp3" />
-        </audio>
+        <!-- Book 5-->
+        <div class="about-page__book mx-auto text-center ml-6">
+          <img src="images/Fydor.jpg" alt="Book 5" />
+          <p class="text-yellow-500">
+            <strong>Favorite Quote:</strong> "i am a fool with a heart but no
+            brains and you are a fool with brains but no heart; and we're both
+            unhappy, and we both suffer."
+          </p>
+          <p class="text-yellow-500"><strong>Date:</strong> Nov 11, 2022</p>
+          <p class="text-yellow-500">
+            <strong>Author:</strong> Fyodor Dostoyevsky
+          </p>
+          <audio controls class="about-page__audio">
+            <source src="audio/Dead Man's Island Part 1.mp3" type="audio/mp3" />
+          </audio>
+        </div>
       </div>
     </div>
 
-    <div><strong>Photography</strong></div>
+    <div class="mt-4 text-xl">Photography</div>
 
-    <div>
-      <img
-        src="images/photography 1.jpg"
-        alt="Photography 1"
-        style="max-width: 100%"
-      />
-      <p><strong>Date:</strong> Nov 1, 2022</p>
-      <p>
-        <strong
-          >Lost in the symphony of colors as the day kisses the sky goodbye. A
-          breathtaking sunset that leaves you in awe of nature's
-          artistry</strong
-        >
-      </p>
-      <a href="https://www.w3schools.com"></a>
+    <!-- First Photography Section -->
+    <div
+      id="photography_carousel_1"
+      class="swiper-container photography-carousel mt-4 text-pink-200"
+    >
+      <div class="swiper-wrapper">
+        <!-- Photography 1 -->
+        <div class="swiper-slide">
+          <img
+            src="images/photography 1.jpg"
+            alt="Photography 1"
+            class="w-full h-auto"
+          />
+          <p class="text-sm"><strong>Date:</strong> Nov 1, 2022</p>
+          <div class="expandable-content" id="expandableContent1">
+            <p class="text-sm">
+              <strong>Lost in the symphony of colors...</strong>
+              <span id="fullContent1" class="hidden">
+                as the day kisses the sky goodbye. A breathtaking sunset that
+                leaves you in awe of nature's artistry.
+              </span>
+            </p>
+            <button
+              onclick="toggleContent('expandableContent1')"
+              class="text-blue-500"
+            >
+              Read More
+            </button>
+          </div>
+        </div>
+
+        <!-- Photography 2 -->
+        <div class="swiper-slide">
+          <img
+            src="images/photography 2.jpg"
+            alt="Photography 2"
+            class="w-full h-auto"
+          />
+          <p class="text-sm"><strong>Date:</strong> March 10, 2023</p>
+          <p class="text-sm">
+            <strong>Description:</strong> Another beautiful moment captured...
+          </p>
+          <a href="https://www.example.com" class="text-blue-500">Read More</a>
+        </div>
+
+        <!-- Photography 3 -->
+        <div class="swiper-slide">
+          <img
+            src="images/sky 2.jpg"
+            alt="Photography 3"
+            class="w-full h-auto"
+          />
+          <p class="text-sm"><strong>Date:</strong> March 10, 2023</p>
+          <p class="text-sm">
+            <strong>Description:</strong> As the sun tries to dip below the
+            horizen, the sky becomes a canvas for the delicate dance of dusk
+          </p>
+          <a href="https://www.example.com" class="text-blue-500">Read More</a>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
     </div>
 
-    <div>
-      <img
-        src="images/photography 2.jpg"
-        alt="Photography 2"
-        style="max-width: 100%"
-      />
-      <p><strong>Date:</strong> Feb 15, 2022</p>
-      <p>
-        <strong
-          >As the sun prepares to dip below the horizon, the sky becomes a
-          canvas for the delicate dance of dusk.</strong
-        >
-      </p>
-      <a href="https://www.w3schools.com">Read More</a>
+    <!-- Second Photography Section -->
+    <div
+      id="photography_carousel_2"
+      class="swiper-container photography-carousel mt-4 text-pink-200"
+    >
+      <div class="swiper-wrapper">
+        <!-- Photography 4 -->
+        <div class="swiper-slide">
+          <img
+            src="images/bird photography.jpg"
+            alt="Photography 4"
+            class="w-full h-auto"
+          />
+          <p class="text-sm"><strong>Date:</strong> Feb 15, 2022</p>
+          <div class="expandable-content" id="expandableContent2">
+            <p class="text-sm">
+              <strong>
+                In the soft embrace of golden afternoon sunlight, a sleek feline
+                muse gracefully lounges upon a windowsill, eyes gleaming with a
+                mischievous glint. Whiskers twitch with curiosity as the cat's
+                languid pose captures the essence of serene indulgence
+              </strong>
+              <span id="fullContent2" class="hidden">
+                The play of shadows and the velvety texture of its fur create a
+                canvas of coziness, inviting observers into a purr-fectly
+                intimate moment, where the artistry of domesticity unfolds.
+              </span>
+            </p>
+            <button
+              onclick="toggleContent('expandableContent2')"
+              class="text-blue-500"
+            >
+              Read More
+            </button>
+          </div>
+        </div>
+
+        <!-- Photography 5 -->
+        <div class="swiper-slide">
+          <img
+            src="images/dog photography.jpg"
+            alt="Photography 5"
+            class="w-full h-auto"
+          />
+          <p class="text-sm"><strong>Date:</strong> April 5, 2023</p>
+          <p class="text-sm">
+            <strong>Description:</strong> Amidst the golden hues of a sun-kissed
+            afternoon, a loyal companion sits in earnest contemplation, ears
+            perked and eyes filled with unwavering devotion. The dappling of
+            sunlight weaves a warm tapestry around this canine confidant,
+            capturing a moment where time seems to pause in harmony. Each strand
+            of fur tells a story of bounding joy and steadfast companionship,
+            inviting all who gaze upon this image into the heartwarming embrace
+            of a dog's timeless friendship.
+          </p>
+          <a href="https://www.example.com" class="text-blue-500">Read More</a>
+        </div>
+
+        <!-- Photography 6 -->
+        <div class="swiper-slide">
+          <img
+            src="images/cat photography.jpg"
+            alt="Photography 6"
+            class="w-full h-auto"
+          />
+          <p class="text-sm"><strong>Date:</strong> April 5, 2023</p>
+          <p class="text-sm">
+            <strong>Description:</strong> In the enigmatic embrace of the night,
+            a mysterious silhouette emerges from the shadows—a feline guardian
+            of the nocturnal realm. Luminescent eyes pierce the darkness,
+            reflecting the moon's subtle glow. The contours of sleek fur remain
+            elusive, hinting at the untold adventures prowling in the obsidian
+            canvas. A whispered tale of the cat's stealth and grace unfolds, as
+            the inky night becomes its timeless playground.
+          </p>
+          <a href="https://www.example.com" class="text-blue-500">Read More</a>
+        </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
     </div>
 
-    <h3>Video Decorating</h3>
-    <div>
+    <h3 class="text-2xl mt-4">Video Decorating</h3>
+    <div class="mt-4">
       <iframe
         width="100%"
         height="315"
@@ -128,7 +264,7 @@
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
-      <p>
+      <p class="mt-2 text-pink-200">
         <strong>Description:</strong> Elevate your space with a touch of
         creativity! In this decoration video, we dive into the world of design
         and transformation. From cozy corners to chic centerpieces, discover
@@ -136,11 +272,17 @@
         home. Get ready to be inspired, and let's turn your space into a haven
         of beauty and charm.
       </p>
-      <a href="https://www.w3schools.com">Watch More</a>
+      <a
+        href="https://www.w3schools.com"
+        class="text-white bg-blue-500 py-1 px-2 rounded"
+        >Watch More</a
+      >
     </div>
 
-    <div class="back-to-home">
-      <a href="home page.html"> Go Back to Home </a>
+    <div class="text-center mt-4">
+      <a href="home page.html" class="text-white bg-blue-500 py-1 px-2 rounded"
+        >Go Back to Home</a
+      >
     </div>
   </body>
 </html>

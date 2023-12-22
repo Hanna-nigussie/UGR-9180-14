@@ -1,42 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="home">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hanna's - Portfolio</title>
-    <link rel="stylesheet" href="home page.css" />
+    <title class="text-2xl">Hanna's - Portfolio</title>
+
+    <link rel="stylesheet" href="output.css" />
+    <script src="script.js" defer></script>
   </head>
-  <body>
-    <header>
-      <img src="logo/portfolio logo.png" alt="Logo" />
-      <h1>HANNA NIGUSSIE</h1>
+
+  <body
+    class="home bg-cover bg-center"
+    style="background-image: url('images/background image.jpg')"
+  >
+    <button
+      class="dark-mode-btn fixed top-20 right-4 text-white bg-black border-none rounded-full p-2"
+      onclick="toggleDarkMode()"
+      title="Toggle Dark Mode"
+    >
+      🌙
+    </button>
+
+    <header
+      class="header bg-black text-pink-200 flex flex-col lg:flex-row items-center p-4"
+    >
+      <img
+        src="logo/my logo.png"
+        alt="Logo"
+        class="header__logo w-8 h-8 mr-2"
+      />
+      <h1
+        class="header__title text-pink-200 text-3xl font-bold text-center lg:text-left lg:mx-4"
+      >
+        HANNA NIGUSSIE
+      </h1>
+      <button
+        id="burger-btn"
+        class="fixed top-4 right-4 bg-gray-800 text-white p-2 z-50"
+      >
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"
+          ></path>
+        </svg>
+      </button>
+
+      <div
+        id="nav-menu"
+        class="fixed top-0 left-0 w-full h-20 bg-gray-800 text-white p-4 transform -translate-y-full transition-transform flex flex-row items-end"
+      >
+        <button id="close-btn" class="text-white">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            ></path>
+          </svg>
+        </button>
+        <ul class="flex flex-row space-x-4">
+          <li><a href="about.html" class="block">About</a></li>
+          <li><a href="education.html" class="block">Education</a></li>
+          <li><a href="volunteer.html" class="block">Voluenteer</a></li>
+          <li><a href="contact.html" class="block">Contact</a></li>
+        </ul>
+      </div>
     </header>
 
-    <main>
+    <main
+      class="main flex flex-col lg:flex-row items-center justify-center p-4 text-blue-300 mt-24"
+    >
       <img
         id="profile-picture"
         src="images/coder girl.jpg"
         alt="Hanna NIGUSSIE"
+        class="main__image lg:order-2 max-w-full h-auto rounded-lg"
       />
-      <h3>Web <span id="developer-span">Developer & Designer</span></h3>
-      <p>
-        Welcome to my portfolio! I am a passionate web developer and designer
-        with expertise in creating modern and responsive websites. My goal is to
-        deliver high-quality solutions that meet the unique needs of my clients.
-      </p>
-      <small id="quote-span"
-        >"Success is not final, failure is not fatal: It is the courage to
-        continue that counts."</small
-      >
+      <div class="lg:order-1 lg:text-left text-center">
+        <h3
+          class="main__title text-blue-300 text-base text-3xl font-semibold mb-10"
+        >
+          Web <span class="main__developer-span">Developer & Designer</span>
+        </h3>
+        <p class="main__paragraph text-blue-300 mb-10">
+          Welcome to my portfolio! I am a passionate web developer and designer
+          with expertise in creating modern and responsive websites. My goal is
+          to deliver high-quality solutions that meet the unique needs of my
+          clients.
+        </p>
+        <small
+          id="quote-span"
+          class="main__quote-span text-blue-200 text-base px-6"
+        >
+          "Success is not final, failure is not fatal: It is the courage to
+          continue that counts."
+        </small>
+      </div>
     </main>
 
-    <footer>
-      <nav>
-        <a href="about.html">About</a>
-        <a href="education.html">Education</a>
-        <a href="volunteer.html">Volunteer activities</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </footer>
+    <footer class="footer text-center p-2"></footer>
   </body>
 </html>
