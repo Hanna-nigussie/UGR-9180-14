@@ -3,40 +3,94 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hanna's - Portfolio</title>
-    <link rel="stylesheet" href="home page.css" />
+    <title class="fs-1">Hanna's - Portfolio</title>
+    <link rel="stylesheet" href="main.css" />
+    <script defer src="script.js"></script>
   </head>
-  <body>
-    <header>
-      <img src="logo/portfolio logo.png" alt="Logo" />
-      <h1>HANNA NIGUSSIE</h1>
-    </header>
 
-    <main>
-      <img
-        id="profile-picture"
-        src="images/coder girl.jpg"
-        alt="Hanna NIGUSSIE"
-      />
-      <h3>Web <span id="developer-span">Developer & Designer</span></h3>
-      <p>
-        Welcome to my portfolio! I am a passionate web developer and designer
-        with expertise in creating modern and responsive websites. My goal is to
-        deliver high-quality solutions that meet the unique needs of my clients.
-      </p>
-      <small id="quote-span"
-        >"Success is not final, failure is not fatal: It is the courage to
-        continue that counts."</small
-      >
+  <body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <img
+          src="logo/my logo.png"
+          alt="my Logo"
+          width="30"
+          height="30"
+          class="d-inline-block align-top"
+        />
+        <h2 class="text-danger ms-2">HANNA NIGUSSIE</h2>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="education.html">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="volunteer.html">Volunteer activities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="position-fixed bottom-0 end-0 m-3">
+      <div class="form-check form-switch text-center">
+        <input class="form-check-input" type="checkbox" id="darkModeToggle" />
+        <label class="form-check-label" for="darkModeToggle"> 🌙 </label>
+      </div>
+    </div>
+
+    <main id="mainContent" class="flex-grow-1 bg-dark text-light">
+      <div class="container">
+        <div class="row">
+          <div class="order-md-2 col-md-6 text-center mt-4 p-4">
+            <img
+              id="profile-picture"
+              src="images/coder girl.jpg"
+              alt="Hanna NIGUSSIE"
+              class="main__image img-fluid rounded ms-auto"
+            />
+          </div>
+          <div class="order-md-1 col-md-6 mt-4 p-4 mr-4">
+            <h3 class="main__title text-info">
+              Web
+              <span class="main__developer-span text-info"
+                >Developer & Designer</span
+              >
+            </h3>
+            <p class="main__paragraph text-info mt-4 p-4">
+              Welcome to my portfolio! I am a passionate web developer and
+              designer with expertise in creating modern and responsive
+              websites. My goal is to deliver high-quality solutions that meet
+              the unique needs of my clients.
+            </p>
+            <small id="quote-span" class="main__quote-span mt-4 pt-4 text-info"
+              >"Success is not final, failure is not fatal: It is the courage to
+              continue that counts."</small
+            >
+          </div>
+        </div>
+      </div>
     </main>
 
-    <footer>
-      <nav>
-        <a href="about.html">About</a>
-        <a href="education.html">Education</a>
-        <a href="volunteer.html">Volunteer activities</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </footer>
+    <footer class="footer bg-dark text-light mt-auto"></footer>
   </body>
 </html>
